@@ -36,7 +36,7 @@ export default class UserList extends Component {
         //     .then(response => {
         //         if (response.data.logged_in) {
         //             this.props.handleSuccessfulAuth(response.data);
-        //             this.props.history.push('/user');
+        //             this.props.history.push('/users');
         //         }
         //     })
         //     .catch(error => {
@@ -48,7 +48,7 @@ export default class UserList extends Component {
     render() {
         return (
             <div>
-                <h2 className="d-flex justify-content-center">User Course Management System</h2>
+                <h2 className="d-flex justify-content-center">Course Management System</h2>
                 <br />
                 <form onSubmit={this.handleSubmit}>
                     <div className="col-sm-6 offset-sm-3">
@@ -68,10 +68,10 @@ export default class UserList extends Component {
                             className="form-control" />
                         <br />
                         <span className="input-group-btn">
-                            <Link to={"/user"}>Click to login</Link>
+                            <Link to={"/users"}>Click to login</Link>
                         </span>
                         {/* <button className="btn btn-primary">Login</button> */}
-                        {/* <button className="btn btn-primary" onClick={() => this.props.history.push('/user')}>Login</button> */}
+                        {/* <button className="btn btn-primary" onClick={() => this.props.history.push('/users')}>Login</button> */}
                     </div>
                 </form>
             </div >

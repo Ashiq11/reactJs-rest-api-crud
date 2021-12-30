@@ -297,7 +297,7 @@ export default class CourseList extends Component {
     return (
       <div className="datatable-crud-demo">
         <h2 className="d-flex justify-content-center">Course Management</h2>
-        <Link to={"/"} className="pi pi-backward" style={{ 'fontSize': '18px' }}> Back to UserList </Link>
+        <Link to={"/users"} className="pi pi-backward" style={{ 'fontSize': '18px' }}> Back to UserList </Link>
         {/* <Button label="Back to UserList" icon="pi pi-backward" className="p-button-secondary p-mr-2" onClick={} /> */}
         <Toast ref={(el) => this.toast = el} />
 

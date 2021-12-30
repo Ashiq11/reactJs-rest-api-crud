@@ -261,7 +261,7 @@ export default class UserList extends Component {
         return (
             <DropdownButton id="dropdown-basic-button" title="Action">
                 <Dropdown.Item>
-                  <Link to={"/courseList/" + rowData.id}>
+                  <Link to={"/user/" + rowData.id}>
                       View Course
                   </Link>
                 </Dropdown.Item>
