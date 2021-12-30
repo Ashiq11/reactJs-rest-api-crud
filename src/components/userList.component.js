@@ -119,7 +119,7 @@ export default class UserList extends Component {
     }
 
     saveUser() {
-        debugger;
+        
         let state = { submitted: true };
 
         if (this.state.user.name.trim()) {
@@ -164,7 +164,7 @@ export default class UserList extends Component {
     }
 
     deleteUser() {
-      debugger;
+      
         let users = this.state.users.filter(val => val.id !== this.state.user.id);
         this.setState({
             users,
@@ -229,7 +229,7 @@ export default class UserList extends Component {
 
 
     deleteSelectedUsers() {
-      debugger;
+      
         let users = this.state.users.filter(val => !this.state.selectedUsers.includes(val));
         this.setState({
             users,

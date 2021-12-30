@@ -6,7 +6,7 @@ class DataService {
     fetch(this.baseURL)
       .then(response => response.json())
       .then(response => {
-          debugger;
+          
         this.setState({
             users: response
         })
@@ -38,7 +38,7 @@ class DataService {
     fetch(this.baseURL)
     .then(response => response.json())
     .then(response => {
-        debugger;
+        
       this.setState({
         classes: response
       })
